@@ -1,7 +1,7 @@
 # shopping-list
 shopping list that you can check the shopping item list 🛒
 
-+ *with HTML, CSS, Vanila JS*   
++ *with HTML, CSS, JavaScript*   
 + *completed this project on March 27th, 2022*  
 + *written in English for **ganzi***
 
