@@ -1,0 +1,250 @@
+@font-face {
+    font-family: 'Bagnard';
+    src: url('./font/Bagnard.otf') format('woff');
+}
+
+@font-face {
+    font-family: 'ggotBom';
+    src: url('./font/A꽃피는봄.woff') format('woff');
+}
+
+:root {
+    /* color */
+    --color-pink: #dbafad;
+    --color-ivory: #dad7ca;
+    --color-beige: #b7b0a0;
+    --color-brown: #575550;
+    --color-darkpink: #9f736e;
+
+    /* animation */
+    --animation-duration: 300ms;
+  }
+
+* {
+    font-family: 'ggotBom';
+    font-size: 20px;
+}
+
+body {
+    background-color: rgb(56, 56, 56);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+label {
+    display: inline-block;
+}
+
+.display {    
+    width: 450px; /*540*/
+    height: 800px; /*960*/
+}
+
+.title {
+    height: 100px;
+    background-color: var(--color-pink);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    font-size: 40px;
+    text-align: center;
+    line-height: 100px;
+    font-family: 'bagnard';
+}
+
+.main {
+    height: 510px;
+    background-color: white;
+    padding: 20px 30px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.main::-webkit-scrollbar {
+    width: 10px;
+}
+
+.main::-webkit-scrollbar-thumb {
+    background-color: #2f3542;
+    border-radius: 10px;
+}
+
+.main::-webkit-scrollbar-track {
+    background-color: grey;
+    border-radius: 10px;
+}
+
+.shopping-item {
+    margin: 15px 0 30px;
+}
+
+.notice {
+    margin: 15px 0 30px;
+    color: grey;
+    text-align: center;
+    display: block;
+}
+
+.item-checkbox {
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+    cursor: pointer;
+    position: relative;
+    top: -5px;
+}
+
+.list {
+    width: 150px;
+    overflow: hidden;
+}
+
+.list-price {
+    width: 80px;
+    text-align: right;
+}
+
+.del-item {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    float: right;
+    right: 2px;
+    cursor: pointer;
+    transition: transform var(--animation-duration) ease;
+}
+
+.del-item:hover {
+    filter: opacity(0.5) drop-shadow(0 0 0 red);
+    transform: scale(1.2);
+}
+
+.line {
+    width: auto;
+    height: 3px;
+    background-color: var(--color-brown);
+    display: flex;
+    align-items: center;
+}
+
+.result {
+    margin: 15px 0;
+}
+
+.total {
+    width: 80px;
+    overflow: hidden;
+}
+
+.total-text {
+    margin-left: 48px;
+}
+
+.total-price {
+    width: 150px;
+    text-align: right;
+}
+
+.won {
+    width: auto;
+}
+
+.allclear-btn {
+    display: block;
+    margin: 15px 0;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.allclear-img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.sub-menu {
+    width: 450px;
+    height: 65px;
+    background-color: var(--color-ivory);
+}
+
+.all-uncheck {
+    width: 183px;
+    height: 35px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    padding: 15px 20px;
+    border: 1px solid #2f3542;
+
+}
+
+.uncheck-img {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 3px;
+    margin-right: 10px;
+}
+
+.all-clear {
+    width: 408px;
+    height: 35px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    padding: 15px 20px;
+}
+
+.clear-img {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top: 4px;
+}
+
+.insert-area {
+    height: 70px;
+    background-color: var(--color-brown);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.input {
+    width: 200px;
+    height: 30px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 3px solid rgb(71, 71, 71);
+    background-color: var(--color-brown);
+    display: inline;
+    float: left;
+    margin-right: 20px;
+    font-style: italic;
+}
+
+.input-price {
+    width: 100px;
+}
+
+.insert {
+    width: 60px;
+    height: 60px;
+    background-color: var(--color-ivory);
+    border-radius: 100%;
+    border: none;
+    display: inline;
+    float: left;
+    cursor: pointer;
+    font-size: 50px;
+    line-height: 65px;
+    color: var(--color-brown);
+}

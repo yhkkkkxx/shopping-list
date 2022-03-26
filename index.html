@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="display">
+        <div class="title">𝚂𝚑𝚘𝚙𝚙𝚒𝚗𝚐 𝙻𝚒𝚜𝚝</div>
+
+        <div class="main">
+            <div class="line"></div>
+            <div class="result">
+                <label class="total total-text" for="item-checkbox">total</label>
+                <label class="total total-price" for="item-checkbox">0</label>
+                <label class="total won" for="item-checkbox">won</label>
+            </div>
+        </div>
+
+        <div class="sub-menu">
+            <div class="all-clear">
+                <img class="clear-img" src="img/delete.png">
+                All Clear
+            </div>
+        </div>
+
+        <div class="underbar">
+            <div class="insert-area">
+                <input class="input input-item" type="text" maxlength="8" onkeydown="onEnterKeyDown()" placeholder="item…">
+                <input class="input input-price" type="text" maxlength="6" onkeydown="onEnterKeyDown()" placeholder="price…">
+                <button class="insert" type="submit">+</button>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
