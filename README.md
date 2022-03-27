@@ -29,6 +29,9 @@ shopping list that you can check the shopping item list 🛒
 
 + if items overflow list screen, scroll-y appears
 
+##### 🚨 if you enter only one value 🚨
+<img width="50%" height="50%" src="https://user-images.githubusercontent.com/90179774/160269483-b4e6d0d6-20ac-425e-8e30-173ed480c982.gif"/>
+
 
 ### 2️⃣ check items
 <img width="50%" height="50%" src="https://user-images.githubusercontent.com/90179774/160267563-3045c94b-750d-4032-af9e-f3cd77c1b7a2.gif"/> 
