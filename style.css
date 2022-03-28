@@ -1,9 +1,4 @@
 @font-face {
-    font-family: 'Bagnard';
-    src: url('./font/Bagnard.otf') format('woff');
-}
-
-@font-face {
     font-family: 'ggotBom';
     src: url('./font/A꽃피는봄.woff') format('woff');
 }
@@ -170,25 +165,6 @@ label {
     background-color: var(--color-ivory);
 }
 
-.all-uncheck {
-    width: 183px;
-    height: 35px;
-    text-align: center;
-    display: inline-block;
-    cursor: pointer;
-    padding: 15px 20px;
-    border: 1px solid #2f3542;
-
-}
-
-.uncheck-img {
-    width: 20px;
-    height: 20px;
-    position: relative;
-    top: 3px;
-    margin-right: 10px;
-}
-
 .all-clear {
     width: 408px;
     height: 35px;
@@ -229,6 +205,7 @@ label {
     float: left;
     margin-right: 20px;
     font-style: italic;
+    outline: none;
 }
 
 .input-price {

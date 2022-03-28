@@ -147,8 +147,11 @@ function checkItem (checkBox) {
 //입력칸 초기화
 function clearInput () {
     const input = document.querySelectorAll('.input');
+    const inputItem = document.querySelector('.input-item');
 
     for( var i=0;i<input.length;i++){
         input[i].value='';
     }
+
+    inputItem.focus();
 }
