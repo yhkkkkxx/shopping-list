@@ -4,7 +4,7 @@ const insertItemBtn = document.querySelector('.insert');
 const total = document.querySelector('.total-price');
 const line = document.querySelector('.line');
 const allClearBtn = document.querySelector('.all-clear');
-var totalPrice = Number(0);
+let totalPrice = Number(0);
 
 
 showTextIfListEmpty(true);
@@ -25,7 +25,7 @@ function onEnterKeyDown() {
 //추가 전 검사
 function checkBeforeInsert() {
     const item = document.querySelector('.input-item').value;
-    var price = Number(document.querySelector('.input-price').value);
+    let price = Number(document.querySelector('.input-price').value);
 
     if(item=='' || price=='') {
         clearInput();
@@ -56,7 +56,7 @@ function delItem(delItemBtn) {
 //전체 삭제
 allClearBtn.addEventListener('click', () => {
     const items = document.querySelectorAll('.shopping-item');
-    for(var i=0; i<items.length; i++) {
+    for(let i=0; i<items.length; i++) {
         items[i].remove();
     }
 
@@ -70,7 +70,7 @@ allClearBtn.addEventListener('click', () => {
 //리스트 비었는지 확인
 function checkIsListEmpty() {
     const shoppingLists = document.querySelectorAll('.shopping-item');
-    var isListEmpty = Boolean(true);
+    let isListEmpty = Boolean(true);
     
     if(shoppingLists.length > 0) {
         isListEmpty = Boolean(false);
@@ -149,7 +149,7 @@ function clearInput () {
     const input = document.querySelectorAll('.input');
     const inputItem = document.querySelector('.input-item');
 
-    for( var i=0;i<input.length;i++){
+    for(let i=0;i<input.length;i++){
         input[i].value='';
     }
 
